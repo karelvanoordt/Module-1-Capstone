@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME | Flavors of Peru 2022</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="home-body">
+    <div id="nav-menu" class="backdrop display-none">
+        
+        <a  id="exit-link" href="#">X</a>  
+        
+        <ul class="menu-items">
+            <li class="menu-list-option"><a class="menu-option" href="#portfolio">About</a></li> 
+            <li class="menu-list-option"><a class="menu-option" href="#about">Program</a></li> 
+            <li class="menu-list-option"><a class="menu-option" href="#contact-container">Speakers</a></li> 
+            <li class="menu-list-option"><a class="menu-option" href="#contact-container">Join</a></li> 
+        </ul>
+
+
+    </div>
+
     <header id="header" class="header">
            
         <div id="navbar-container">
             <!-- Mobile Navigation Menu (Hidden for Desktop Version) -->
-            <nav id="mobile-navbar" class="mobile-navbar">
-                <a id="hamburger-link" href="#"><img id="hamburger" class="hamburger" src="images/icons/mobile-hamburger-icon.png" alt="Open Menu"></a>
+            <nav id="mobile-navbar" class="navbar-menu">
+                <a id="hamburger-link" href="#" class="toolbar-button"><img id="hamburger" class="hamburger" src="images/icons/mobile-hamburger-icon.png" alt="Open Menu"></a>
+               
             </nav>
-
-
-            <nav id="desktop-navbar" class="display-none">
-                <ul>
-                    
-                </ul>
-            </nav>
-        </div>
 
         <div id="heading-cont" class="heading">
             <h2 id="main-subtitle" class="main-subtitle">International Culinary Summit</h2>
@@ -93,7 +99,29 @@
         <span id="final"></span>
     </section>
 
-    
+    <footer class="page-footer">
+        <div class="partners-container">
+            <h2 class="footer-title">Partner</h2>
+            <hr>
+            <div class="img-partners-container">
+                <img>
+                <img>
+                <img>
+                <img>
+                <img>
+            </div>
+        </div>
+
+        <div class="copyright">
+
+            <img class="copyright-img" src="images/feature images/marca-peru.jpg">
+            <p>Marca Peru</p>
+            <p>All rights reserved</p>
+
+        </div>
+
+    </footer>
+
     
  <script type='text/JavaScript' src="main.js"></script>
 </body>

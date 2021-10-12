@@ -1,8 +1,42 @@
+// Navigation bar mobile 
+
+const navbarMenu = document.querySelector('.navbar-menu');
+const openMenu = document.querySelector('.hamburger');
+const backdrop = document.querySelector('.backdrop');
+const hamburger = document.querySelector('.hamburger');
+
+function open() {
+  navbarMenu.classList.remove('display-none');
+  backdrop.classList.remove('display-none');
+  hamburger.classList.add('display-none');
+}
+
+openMenu.addEventListener('click', open);
+
+const closeMenu = document.getElementById('exit-link');
+
+function close() {
+  navbarMenu.classList.add('display-none');
+  hamburger.classList.remove('display-none');
+}
+
+closeMenu.addEventListener('click', close);
+
+const links = document.querySelectorAll('.menu-option');
+
+for (let i = 0; i < links.length; i += 1) {
+  links[i].addEventListener('click', () => {
+    navbarMenu.classList.add('display-none');
+  });
+}
+
+
+
 // Object declaration
 const speakers = [
    {
        spk: 1,
-       spk_img: 'Gaston-1.jpg',
+       pic: 'images/speakers/Gaston-1.jpg',
        alt_text: 'Gaston Acurio Photograph',
        name: 'Gaston Acurio',
        title: 'Chef, Writer, TV Host',
@@ -11,16 +45,16 @@ const speakers = [
 
    {
         spk: 2,
-        spk_img:'images/speakers/micha-1.jpeg',
+        pic:'images/speakers/micha-1.jpg',
         alt_text: 'Mitsuharu Maido Photograph',
         name: 'Mitsuharu Maido',
         title: 'Chef & Businessman',
-        copy: 'Known also as "Micha", is also one of the precursos of perus rise in the culinary industry. His part of the 10-best restaurants in the world: Maido, is famous for its fusion between japanese and peruvian culture. '
+        copy: 'Known also as "Micha", is also one of the precursos of Perus rise in the culinary industry. His part of the 10-best restaurants in the world: Maido, is famous for its fusion between japanese and peruvian culture. '
     },
 
     {
         spk: 3,
-        spk_img: 'images/speakers/virgilio-1.jpeg',
+        pic: 'images/speakers/virgilio-1.jpg',
         alt_text: 'Virgilio Martinez Photograph',
         name: 'Virgilio Martinez',
         title: 'Chef & Creator',
@@ -29,19 +63,19 @@ const speakers = [
 
     {
         spk: 4,
-        spk_img: 'images/speakers/pia-1.jpeg',
+        pic: 'images/speakers/pia-1.jpg',
         alt_text: 'Pia Leon Photograph',
         name: 'Pia Leon',
-        title: 'Chef, Businesswoman and ',
+        title: 'Chef and Businesswoman ',
         copy: 'Recently laureated as "Worlds best female Chef" for her creations in Kjolle, a peruvian concept restaurant located in one Perus bohemian district Barranco. She is the first of many world-leading chefs to come.'
     },
 
     {
         spk: 5,
-        spk_img: 'images/speakers/palmiro-1.jpeg',
+        pic: 'images/speakers/palmiro-1.jpg',
         alt_text: 'Palmiro Ocampo Photograph',
         name: 'Palmiro Ocampo', 
-        title: 'Chef, Philantropist and UNICEF embassador',
+        title: 'Chef and UNICEF embassador',
         copy: 'Has traveled around the world developing sustainable ways to to attack hunger. Back in 2014 he was chosen to lead Perus top food festival "Mistura".'
     },
 ]
@@ -58,21 +92,25 @@ speakers.forEach((dynamicSpeakers) => {
    speakersContainer.appendChild(speakerCard);
 
    // Speaker Image
+   const speakerBackImg = document.createElement('img');
+   speakerBackImg.setAttribute('src', 'images/vectors/chess-board.png');
+   speakerBackImg.classList.add('speaker-chess'); 
    const speakerImg = document.createElement('img');
+   speakerCard.appendChild(speakerBackImg);
    speakerImg.classList.add('speaker-image');
-   speakerImg.setAttribute('src', speakers.spk_img);
+   speakerImg.setAttribute('src', dynamicSpeakers.pic);
    speakerCard.appendChild(speakerImg);
 
    // Speaker Name
    const speakerName = document.createElement('h2');
    speakerName.classList.add('speaker-name');
-   speakerName.textContent = speakers.name;
+   speakerName.textContent = dynamicSpeakers.name;
    speakerCard.appendChild(speakerName);
 
    // Speaker Title
    const speakerTite = document.createElement('h3');
    speakerTite.classList.add('speaker-title');
-   speakerTite.textContent = speakers.title;
+   speakerTite.textContent = dynamicSpeakers.title;
    speakerCard.appendChild(speakerTite);
 
    // Separator
@@ -83,10 +121,9 @@ speakers.forEach((dynamicSpeakers) => {
    // Speaker Copy
    const speakerCopy = document.createElement('p');
    speakerCopy.classList.add('speaker-copy');
-   speakerCopy.textContent = speakers.copy;
+   speakerCopy.textContent = dynamicSpeakers.copy;
    speakerCard.appendChild(speakerCopy);
 });
-
 
 
 
