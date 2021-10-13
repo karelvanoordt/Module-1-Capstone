@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="about-body">
-    <div id="nav-menu" class="backdrop display-none">
-        <a  id="exit-link" href="#">X</a>  
+    <div id="navbar-menu" class="backdrop display-none">
+        
+        <a  id="exit-link-about" class="exit-link" onclick="close()">X</a>  
+        
         <ul class="menu-items">
-            <li class="menu-list-option"><a class="menu-option" href="#portfolio">About</a></li> 
-            <li class="menu-list-option"><a class="menu-option" href="#about">Program</a></li> 
-            <li class="menu-list-option"><a class="menu-option" href="#contact-container">Speakers</a></li> 
-            <li class="menu-list-option"><a class="menu-option" href="#contact-container">Join</a></li> 
+            <li class="menu-list-option"><a href="index.html" class="menu-option">Home</a></li> 
+            <li class="menu-list-option"><a href="about.html" class="menu-option">About</a></li> 
+            <li class="menu-list-option"><a href="index.html#program" class="menu-option">Program</a></li> 
+            <li class="menu-list-option"><a href="index.html#speakers" class="menu-option">Speakers</a></li> 
+            <li class="menu-list-option"><a href="index.html#submit-button" class="menu-option">Join</a></li> 
         </ul>
-    </div>
 
+    </div>
     <header id="header" class="about-header header">
            
         <div id="navbar-container">
@@ -33,7 +36,7 @@
 
                 <div id="desktop-menu">
                     <div id="menu-logo-cont">
-                    <a href="index.html"><img hre class="menu-logo" src="images/feature-images/event-logo-black.png" alt="Flavors of Peru logo"></a>
+                    <a href="index.html"><img class="menu-logo" src="images/feature-images/event-logo-black.png" alt="Flavors of Peru logo"></a>
                     </div>
                     <div id="menu-link-cont">
                     <a class="menu-link">About</a>
@@ -49,8 +52,8 @@
 
 
             <!-- Mobile Navigation Menu (Hidden for Desktop Version) -->
-            <nav id="mobile-navbar" class="about-navbar-menu">
-                <a id="hamburger-link" href="#" class="toolbar-button about-hamburger"><img id="hamburger" class="hamburger" src="images/icons/mobile-hamburger-icon.png" alt="Open Menu"></a>
+            <nav id="mobile-navbar" class="navbar-menu mobile-navbar">
+                <a id="hamburger-link" href="#" class="toolbar-button"><img id="hamburger" class="hamburger" src="images/icons/mobile-hamburger-icon.png" alt="Open Menu"></a>
             </nav>
 
         </div>
@@ -97,16 +100,19 @@
 
         <p class="about-text-content">Take a look at the last two Flavors of Peru summits which took place in Moscow and Lisbon.</p>
 
-        <div class="about-img-events">
-            <img class="past-event-img img-text-cont" src="images/feature-images/2019.png" alt="2019 Flavors of Peru taken place is Lisbon">
-            <div class="event-img-year inside-text">2019</div>
-            <div class="event-img-location inside-text">Flavors of Peru Lisbon</div>
-        </div>
 
-        <div class="about-img-events">
-            <img class="past-event-img" src="images/feature-images/2018.png" alt="2018 Flavors of Peru taken place is Moscow">
-            <div class="event-img-year">2018</div>
-            <div class="event-img-location">Flavors of Peru Moscow</div>
+        <div id="events-container">
+            
+            <div class="about-img-events-Lisbon">    
+                <h2 class="event-img-year inside-text">2019</h2>
+                <h3 class="event-img-location inside-text">Flavors of Peru Lisbon</h3>
+            </div>
+
+            
+            <div class="about-img-events-Moscow">    
+                <h2 class="first-text">2018</h2>
+                <h3 class="second-text">Flavors of Peru Moscow</h3>
+            </div>
         </div>
 
     </section>
@@ -134,5 +140,6 @@
         </div>
 
     </footer>
+    <script type='text/JavaScript' src="main.js"></script>
 </body>
 </html>
