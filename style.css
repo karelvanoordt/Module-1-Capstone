@@ -14,6 +14,10 @@
   background-color: rgb(246, 246, 246);
 }
 
+#desktop-navbar {
+  display: none;
+}
+
 /* MOBILE NAVBAR */
 #mobile-navbar .hamburger {
   width: 60px;
@@ -403,11 +407,24 @@
 
 .img-partners-container {
   padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .partner-logo {
-  width: 100px;
-  height: auto;
+  width: 80px;
+  height: 100%;
+}
+
+.partner-logo:hover {
+  filter:
+    invert(27%)
+    sepia(50%)
+    saturate(400%)
+    hue-rotate(346deg)
+    brightness(104%)
+    contrast(97%);
 }
 
 .past-event-img {
@@ -415,24 +432,36 @@
   width: auto;
   padding: 20px;
 }
-
+/* 
 .img-text-cont {
   position: relative;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
-}
+} */
 
 .copyright {
   background-color: #fff;
   display: flex;
   height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#rights {
+  display: flex;
+  flex-direction: column;
 }
 
 .copyright-text {
   color: #272a31;
-  display: flexbox;
+  font-size: 10px;
 }
+
+.copyright-img {
+  width: 100px;
+}
+
 
 
 
@@ -440,6 +469,83 @@
 
 /* RESPONSIVE FOR SCREENS WIDER THAN 768px */
 @media screen and (min-width: 768px) {
+
+/* NAVBAR */
+
+#desktop-navbar {
+  display:flex;
+  flex-direction: column;
+  margin: 0 0 0 -110px;
+}
+
+
+
+#desktop-navbar #social {
+  display: flex;
+  width: 100vw;
+  height: 3vh;
+  background-color: #272a31;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 0;
+}
+
+#social .social-icon {
+  width: 15px;
+  filter:  brightness(0) invert(1);
+  
+}
+
+#social .top-navbar {
+  margin: 2px 0px 2px 8px;
+  font-size: 12px;
+}
+
+
+#desktop-menu {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 10px;
+  height: 10vh;
+  padding-right: 10px;
+  margin-right: -20px;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#menu-logo-cont {
+  grid-column: 1;
+  justify-content: left;
+}
+
+
+#desktop-menu .menu-logo {
+  width: 200px;
+  margin: 5px 0 5px 140px
+}
+
+#menu-link-cont {
+  grid-column: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+}
+
+.menu-link:hover{
+  filter:
+    invert(80%)
+    sepia(50%)
+    saturate(400%)
+    hue-rotate(346deg)
+    brightness(104%)
+    contrast(97%);
+}
+
 
 
 /* HEADER */
@@ -522,7 +628,7 @@
   }
 
 
-
+/* PARTNERS */
 
   .partners-container {
       justify-content: center;
@@ -534,6 +640,7 @@
       display: flex;
       justify-content: center;
   }
+  
 
   .partner-logo {
       width: 80px;
