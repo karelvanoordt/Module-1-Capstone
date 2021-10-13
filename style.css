@@ -4,7 +4,6 @@
 /* LATO Font */
 @import url('http://fonts.cdnfonts.com/css/lato');
 
-
 /* DISPLAY NONE */
 .display-none {
   display: none;
@@ -87,7 +86,6 @@
   filter: grayscale(0%);
 }
 
-
 /* HEADING TITLES */
 .header .heading {
   margin-top: 10px;
@@ -140,8 +138,6 @@
   margin-right: 40px;
   padding-bottom: 50px;
 }
-
-
 
 /* HEADING DESCRIPTION AND DATES */
 .header .dates {
@@ -498,7 +494,6 @@
   width: 100px;
 }
 
-
 /* RESPONSIVE FOR SCREENS WIDER THAN 768px */
 @media screen and (min-width: 768px) {
   /* NAVBAR */
@@ -662,7 +657,6 @@
   }
 
   /* SPEAKERS */
-
   #speakers-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -731,9 +725,7 @@
     filter: grayscale(0);
   }
 
-
   /* PARTNERS */
-
   .partners-container {
     justify-content: center;
   }
