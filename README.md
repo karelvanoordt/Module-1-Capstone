@@ -19,6 +19,7 @@ Additional description about the project and its features.
 
 [Live Demo Link](https://karelvanoordt.github.io/Module-1-Capstone/)
 
+[Loom Video Demo](https://www.loom.com/share/8183497609164fe3a605c234106bad40)
 
 ## Getting Started
 
