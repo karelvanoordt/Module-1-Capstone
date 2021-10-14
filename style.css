@@ -246,9 +246,7 @@
 /* SPEAKERS SECTION */
 
 #speakers {
-  position: static;
-  margin-left: 80px;
-  margin-right: 80px;
+
 }
 
 #speakers #speakers-title {
@@ -264,47 +262,48 @@
 #speakers .speaker-card {
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-rows: 20% 30% 50%;
-  gap: 5px;
-  margin: 10px 20px 10px 20px;
+  grid-template-rows: 40% 60%;
+  gap: 12px;
+  margin: 10px 0px;
   font-family: 'Lato', sans-serif;
   padding: 30px 20px 30px 20px;
   position: static;
+  margin-bottom: -40px;
 }
 
 .speaker-card .speaker-image {
   grid-column: 1;
   width: 140px;
   height: 140px;
-  background-image: url(images/vectors/chess-board.png);
+  background-image: url('images/vectors/chess_board.jpeg');
+  background-size: 70%;
   background-repeat: no-repeat;
-  top: -10px;
-  right: -10px;
+  background-position: top left;
+  padding: 20px;
 }
 
 .speaker-card .speaker-name {
   grid-column: 2;
   margin-left: 50px;
-  margin-bottom: -10px;
   grid-row: 1;
   font-size: 22px;
 }
 
 .speaker-card .speaker-title {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 1;
   font-size: 14px;
-  margin-top: 10px;
   margin-left: 50px;
   font-style: italic;
   font-weight: 400;
   color: #ec5242;
+  margin-top: 70px
 }
 
 .speaker-card .card-separator {
   color: black;
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
   width: 10%;
   height: 0;
   margin-top: -20px;
@@ -313,7 +312,7 @@
 
 .speaker-card .speaker-copy {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2;
   font-size: 10px;
   margin-top: -5px;
   margin-left: 50px;

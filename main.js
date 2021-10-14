@@ -77,7 +77,7 @@ const speakers = [
     pic: 'images/speakers/palmiro-1.jpg',
     alt_text: 'Palmiro Ocampo Photograph',
     name: 'Palmiro Ocampo',
-    title: 'Chef and UNICEF embassador',
+    title: 'UNICEF embassador',
     copy: 'Has traveled around the world developing sustainable ways to to attack hunger. Back in 2014 he was chosen to lead Perus top food festival "Mistura".',
   },
 ];
