@@ -416,7 +416,7 @@
   background-color: #fff;
   margin-top: 5px;
   font-family: 'Lato', sans-serif;
-  text-align: center;
+  text-align: inherit;
 }
 
 .about-section-title {
@@ -437,6 +437,14 @@
 
 .footer-title {
   padding: 20px;
+}
+
+#partners {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  background-color: #272a31;
 }
 
 .partners-container {
@@ -476,6 +484,9 @@
   background-size: 250px;
   padding: 20px;
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+  margin-left: 70px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .about-img-events-Lisbon {
@@ -486,6 +497,10 @@
   background-size: 250px;
   padding: 20px;
   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+  margin-left: 70px;
+  color: #fff;
+
+
 }
 
 .copyright {
@@ -707,6 +722,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+
   }
 
   .about-img-events-Moscow {
@@ -742,7 +758,17 @@
   /* PARTNERS */
   .partners-container {
     justify-content: center;
+
   }
+
+  #partners {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    background-color: #272a31;
+  }
+
 
   .img-partners-container {
     align-items: center;
