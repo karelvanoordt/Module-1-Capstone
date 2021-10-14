@@ -460,13 +460,6 @@
   text-align: center;
 }
 
-.page-footer {
-  font-family: 'Lato', sans-serif;
-  color: #fff;
-  text-align: center;
-  justify-content: space-around;
-}
-
 .footer-title {
   padding: 20px;
 }
@@ -529,6 +522,10 @@
 
 .copyright-img {
   width: 100px;
+}
+
+.page-footer {
+  display: none;
 }
 
 /* RESPONSIVE FOR SCREENS WIDER THAN 768px */
@@ -781,4 +778,12 @@
   .copyright .copyright-text {
     color: #fff;
   }
+
+  .page-footer {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
 }
