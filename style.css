@@ -25,9 +25,9 @@
 }
 
 #mobile-navbar {
-  align-self: left;
   justify-content: left;
 }
+
 .backdrop {
   position: fixed;
   width: 120%;
@@ -50,8 +50,6 @@
 .exit-list {
   list-style-type: none;
 }
-
-
 
 .menu-items .menu-list-option {
   padding: 20px;
@@ -83,7 +81,7 @@
 }
 
 .header-background {
-  display: none
+  display: none;
 }
 
 .ingredient-img {
@@ -108,12 +106,9 @@
   text-align: center;
 }
 
-#about-description-cont {
-  text-align: center;
-}
-
 #about-contact {
   text-align: center;
+  padding: 30px;
 }
 
 .header .main-subtitle {
@@ -214,6 +209,7 @@
   height: auto;
   padding: 10px;
   align-self: center;
+
   /* margin-left: ; */
 }
 
@@ -231,7 +227,9 @@
   font-size: 12px;
   line-height: 20px;
   color: #fff;
+
   /* vertical-align: middle; */
+
   /* margin-right: 25px; */
   justify-content: left;
   overflow: hidden;
@@ -250,10 +248,6 @@
 
 /* SPEAKERS SECTION */
 
-#speakers {
-
-}
-
 #speakers #speakers-title {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
@@ -269,7 +263,7 @@
   grid-template-columns: 35% 65%;
   grid-template-rows: 40% 60%;
   gap: 12px;
-  margin: 10px 0px;
+  margin: 10px 0;
   font-family: 'Lato', sans-serif;
   padding: 30px 20px 30px 20px;
   position: static;
@@ -302,7 +296,7 @@
   font-style: italic;
   font-weight: 400;
   color: #ec5242;
-  margin-top: 70px
+  margin-top: 70px;
 }
 
 .speaker-card .card-separator {
@@ -342,7 +336,6 @@
 }
 
 .about-header {
-
   background-color: rgb(246, 246, 246);
 }
 
@@ -365,6 +358,7 @@
   padding: 10px;
   margin: 20px 15px 20px 15px;
   background-color: #fff;
+  text-align: center;
 }
 
 .about-description {
@@ -373,10 +367,6 @@
   font-size: 16px;
   line-height: 22px;
   margin: 10px 15px 10px 15px;
-}
-
-#about-contact {
-  padding: 30px;
 }
 
 #about-email {
@@ -420,7 +410,43 @@
   background-color: #fff;
   margin-top: 5px;
   font-family: 'Lato', sans-serif;
-  text-align: inherit;
+  text-align: center;
+  justify-content: center;
+}
+
+#moscow-lisbon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lisbon-lisbon {
+  background-image: url(images/feature-images/2019-b.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  color: #fff;
+}
+
+.lisbon-lisbon:hover {
+  background-image: url(images/feature-images/2019.png);
+}
+
+.moscow-moscow {
+  background-image: url(images/feature-images/2018-b.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  color: #fff;
+}
+
+.moscow-moscow:hover {
+  background-image: url(images/feature-images/2018.png);
 }
 
 .about-section-title {
@@ -432,14 +458,13 @@
 .about-text-content {
   font-size: 14px;
   text-align: center;
-
 }
 
 .page-footer {
   font-family: 'Lato', sans-serif;
   color: #fff;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .footer-title {
@@ -482,40 +507,13 @@
     contrast(97%);
 }
 
-.about-img-events-Moscow {
-  height: 50%;
-  width: auto;
-  background-image: url(images/feature-images/2018.png);
-  background-repeat: no-repeat;
-  background-size: 250px;
-  padding: 20px;
-  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  margin-left: 70px;
-  margin-top: 10px;
-  color: #fff;
-}
-
-.about-img-events-Lisbon {
-  height: 50%;
-  width: auto;
-  background-image: url(images/feature-images/2019.png);
-  background-repeat: no-repeat;
-  background-size: 250px;
-  padding: 20px;
-  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  margin-left: 70px;
-  color: #fff;
-
-
-}
-
 .copyright {
   background-color: #fff;
   display: flex;
   gap: 20px;
   height: 100px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #rights {
@@ -634,12 +632,6 @@
     margin-right: 100px;
   }
 
-  .header-background {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-  }
-
   .ingredient-img {
     width: 60px;
     filter: grayscale(100%);
@@ -747,47 +739,16 @@
 
   /* ABOUT PAST EVENTS */
 
-  #events-container {
+  #moscow-lisbon {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 10px;
-
   }
 
-  .about-img-events-Moscow {
-    height: 50%;
-    width: auto;
-    background-image: url(images/feature-images/2018.png);
-    background-repeat: no-repeat;
-    background-size: 250px;
-    padding: 20px;
-    color: #fff;
-    background-color: rgba(237, 67, 49, 0.4);
-  }
-
-  .about-img-events-Lisbon {
-    height: 50%;
-    width: auto;
-    background-image: url(images/feature-images/2019.png);
-    background-repeat: no-repeat;
-    background-size: 250px;
-    padding: 20px;
-    color: #fff;
-    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
-  }
-
-  .about-img-events-Lisbon:hover {
-    filter: grayscale(0);
-  }
-
-  .about-img-events-Moscow:hover {
-    filter: grayscale(0);
-  }
 
   /* PARTNERS */
   .partners-container {
     justify-content: center;
-
   }
 
   #partners {
@@ -797,7 +758,6 @@
     justify-content: center;
     background-color: #272a31;
   }
-
 
   .img-partners-container {
     align-items: center;
@@ -816,12 +776,10 @@
     display: flex;
     height: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .copyright .copyright-text {
     color: #fff;
   }
-
-
 }
