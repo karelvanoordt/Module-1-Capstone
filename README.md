@@ -53,9 +53,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- A big Thank You to designer [Cindy Shin](https://www.behance.net/adagio07) for her beautiful template.
 
 ## 📝 License
 

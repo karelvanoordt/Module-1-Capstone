@@ -4,11 +4,13 @@ const navbarMenu = document.querySelector('.navbar-menu');
 const openMenu = document.querySelector('.hamburger');
 const backdrop = document.querySelector('.backdrop');
 const hamburger = document.querySelector('.hamburger');
+const headerBackground = document.querySelector('.header-brackground')
 
 function open() {
   navbarMenu.classList.remove('display-none');
   backdrop.classList.remove('display-none');
   hamburger.classList.add('display-none');
+  headerBackground.classList.add('display-none');
 }
 
 openMenu.addEventListener('click', open);
@@ -18,6 +20,8 @@ const closeMenu = document.getElementById('exit-link');
 function close() {
   navbarMenu.classList.add('display-none');
   hamburger.classList.remove('display-none');
+  headerBackground.classList.remove('display-none')
+
 }
 
 closeMenu.addEventListener('click', close);
@@ -90,11 +94,7 @@ speakers.forEach((dynamicSpeakers) => {
   speakersContainer.appendChild(speakerCard);
 
   // Speaker Image
-  const speakerBackImg = document.createElement('img');
-  speakerBackImg.setAttribute('src', 'images/vectors/chess-board.png');
-  speakerBackImg.classList.add('speaker-chess');
   const speakerImg = document.createElement('img');
-  speakerCard.appendChild(speakerBackImg);
   speakerImg.classList.add('speaker-image');
   speakerImg.setAttribute('src', dynamicSpeakers.pic);
   speakerCard.appendChild(speakerImg);
