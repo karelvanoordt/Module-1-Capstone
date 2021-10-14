@@ -30,8 +30,8 @@
 }
 .backdrop {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   background-color: #272a31;
   margin: -20px -20px -20px -20px;
 }
@@ -46,6 +46,12 @@
   list-style-type: none;
   padding-top: 50px;
 }
+
+.exit-list {
+  list-style-type: none;
+}
+
+
 
 .menu-items .menu-list-option {
   padding: 20px;
@@ -62,10 +68,11 @@
   margin-bottom: 35px;
 }
 
-#nav-menu #exit-link {
+#exit-link {
   font-family: 'Lato', sans-serif;
   font-size: 25px;
   color: #fff;
+  text-decoration: none;
 }
 
 #nav-menu #exit-link-about {
@@ -76,9 +83,7 @@
 }
 
 .header-background {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
+  display: none
 }
 
 .ingredient-img {
@@ -405,7 +410,7 @@
 }
 
 .event-logo {
-  width: 300px;
+  width: 220px;
   height: auto;
   padding: 10px;
   border: 1px solid #272a31;
@@ -421,10 +426,13 @@
 .about-section-title {
   color: #272a31;
   padding-top: 30px;
+  text-align: center;
 }
 
 .about-text-content {
   font-size: 14px;
+  text-align: center;
+
 }
 
 .page-footer {
@@ -448,7 +456,6 @@
 
 .partners-container {
   background-color: #272a31;
-  height: 200px;
 }
 
 .img-partners-container {
@@ -616,6 +623,12 @@
 
   /* HEADER */
 
+  .header-background {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
   #header {
     margin-left: 100px;
     margin-right: 100px;
@@ -700,7 +713,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     column-gap: 20px;
-    grid-template-rows: 20% 30% 50%;
+    grid-template-rows: 25% 75%;
     margin: 10px 20px 10px 20px;
     font-family: 'Lato', sans-serif;
     padding: 30px 20px 30px 20px;
@@ -713,6 +726,23 @@
     background-image: url(images/vectors/chess-board.png);
     top: -10px;
     left: -10px;
+  }
+
+  .speaker-card .speaker-name {
+    grid-row: 1;
+  }
+
+  .speaker-card .speaker-title {
+    grid-row: 1;
+  }
+
+  .speaker-card .speaker-copy {
+    grid-row: 2;
+    margin-top: 20px;
+  }
+
+  .speaker-card .card-separator {
+    margin-top: 15px;
   }
 
   /* ABOUT PAST EVENTS */
